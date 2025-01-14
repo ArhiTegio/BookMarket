@@ -1,4 +1,5 @@
-﻿using TelnetServer;
+﻿using Entities.Telnet;
+using TelnetServer;
 
 namespace BookMarket.Services.Telnet.Commands
 {

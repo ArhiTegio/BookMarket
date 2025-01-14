@@ -1,6 +1,7 @@
 ﻿using BookMarket.Services.Telnet.Commands;
 using TelnetServer;
 using System.Text;
+using Entities.Telnet;
 
 namespace BookMarket.Services.Telnet
 {

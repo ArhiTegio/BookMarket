@@ -4,3 +4,6 @@ C:\Git\Csharp\BookMarket\BookMarket\TelnetServer\obj\Debug\TelnetServer.csproj.A
 C:\Git\Csharp\BookMarket\BookMarket\TelnetServer\obj\Debug\TelnetServer.csproj.CoreCompileInputs.cache
 C:\Git\Csharp\BookMarket\BookMarket\TelnetServer\obj\Debug\TelnetServer.dll
 C:\Git\Csharp\BookMarket\BookMarket\TelnetServer\obj\Debug\TelnetServer.pdb
+C:\Git\Csharp\BookMarket\BookMarket\TelnetServer\bin\Debug\Entities.dll
+C:\Git\Csharp\BookMarket\BookMarket\TelnetServer\bin\Debug\Entities.pdb
+C:\Git\Csharp\BookMarket\BookMarket\TelnetServer\obj\Debug\TelnetServer.csproj.CopyComplete
