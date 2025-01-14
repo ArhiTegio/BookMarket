@@ -1,0 +1,6 @@
+C:\Git\Csharp\BookMarket\BookMarket\TelnetServer\bin\Debug\TelnetServer.dll
+C:\Git\Csharp\BookMarket\BookMarket\TelnetServer\bin\Debug\TelnetServer.pdb
+C:\Git\Csharp\BookMarket\BookMarket\TelnetServer\obj\Debug\TelnetServer.csproj.AssemblyReference.cache
+C:\Git\Csharp\BookMarket\BookMarket\TelnetServer\obj\Debug\TelnetServer.csproj.CoreCompileInputs.cache
+C:\Git\Csharp\BookMarket\BookMarket\TelnetServer\obj\Debug\TelnetServer.dll
+C:\Git\Csharp\BookMarket\BookMarket\TelnetServer\obj\Debug\TelnetServer.pdb
