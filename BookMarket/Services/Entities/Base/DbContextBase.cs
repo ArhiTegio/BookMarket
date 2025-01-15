@@ -10,7 +10,7 @@ namespace BookMarket.Services.Entities.Base
     public abstract class DbContextBase : DbContext
     {
 
-        protected DbContextBase()
+        protected DbContextBase(DbContextOptions<DbContextBase> options) : base(options)
         {
 #if DEBUG
             //Database.EnsureDeleted();

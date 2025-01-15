@@ -2,6 +2,9 @@
 using TelnetServer;
 using System.Text;
 using Entities.Telnet;
+using BookMarket.Services.Entities;
+using BookMarket.Services.Entities.Base;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookMarket.Services.Telnet
 {
@@ -9,18 +12,22 @@ namespace BookMarket.Services.Telnet
     {
 
         private TelnetService _TelnetService { get; set; }
-        public TelnetCommandsService()
+        private DbContextOptions<DbContextBase>? _DbOptions { get; set; }
+        public TelnetCommandsService(DbContextOptions<DbContextBase>? dbOptions)
         {
+            _DbOptions = dbOptions;
             //Create Telnet service
             _TelnetService = new TelnetService(
                 new TCPServer(), //Multi client TCP server
                 new ITelnetCommand[]//Custom commands we implemented
             {
+                new HelpCommand(),
                 new HelloCommand(),
                 new EchoCommand(),
-                new GetCommand(),
-                new BuyCommand(),
-                new RestockCommand(),
+                new GetCommand(dbOptions),
+                new BuyCommand(dbOptions),
+                new RestockCommand(dbOptions),
+                new ExitCommand(),
             });
 
             Start();
@@ -30,7 +37,7 @@ namespace BookMarket.Services.Telnet
         {
             //Settings for the Telnet service
             TelnetServiceSettings _telnetSettings = new TelnetServiceSettings();
-            _telnetSettings.PromtText = "SampleApp@" + Environment.MachineName;
+            _telnetSettings.PromtText = "BookMarket@" + Environment.MachineName;
             _telnetSettings.PortNumber = 32202;
             _telnetSettings.Charset = Encoding.Default.CodePage;
 
